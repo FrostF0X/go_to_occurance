@@ -1,0 +1,5 @@
+# Idea IDE staff:
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+
+/out

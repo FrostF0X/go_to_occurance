@@ -1,0 +1,39 @@
+<idea-plugin>
+    <id>com.frost_fox.goto</id>
+    <name>Go To Occurrence</name>
+    <version>1.0</version>
+    <vendor email="dmytro.konowalow@gmail.com" url="https://github.com/FrostF0X">FrostF0x</vendor>
+
+    <description><![CDATA[
+      Plugin is build for fast navigation through sources.
+After firing plugin by assigned keystroke you are able to write down text you want move to in pop-up area.
+While modifying text closes occurrence of input text will be marked as selected in editor.
+After pressing enter caret will be moved to the start of that occurrence.
+    ]]></description>
+
+    <change-notes><![CDATA[
+  Initial change notes
+    ]]>
+    </change-notes>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="173.0"/>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.lang</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <action id="GoToOccurrenceAction" class="go_to_occurrence.Action" text="Go To Occurrence"
+                description="Navigates to closes occurrence of entered text">
+            <keyboard-shortcut keymap="$default" first-keystroke="shift control J"/>
+        </action>
+    </actions>
+
+    <application-components>
+    </application-components>
+</idea-plugin>
