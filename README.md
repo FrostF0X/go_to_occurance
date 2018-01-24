@@ -12,4 +12,6 @@ Install plugin from Idea plugin repository by following this
 [guide](https://www.jetbrains.com/help/idea/installing-updating-and-uninstalling-repository-plugins.html) 
 and install `Go To Occurrence`
 
+Also if plugin was not published yet you can download and install it from `goto_plugin.jar` located under repos root
+
 Go to Preferences > Keymap > Search for `Go To Occurrence` and assign preferred shortcut  
